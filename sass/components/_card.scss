@@ -1,0 +1,42 @@
+/*******service card******/
+.card {
+  width: 100%;
+  background-color: #efefef;
+  border: 1px solid $white;
+  box-shadow: 1px 1px 5px #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 1.6rem;
+
+  & > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: $primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(desk-xl) {
+      width: 24rem;
+      height: 24rem;
+    }
+
+    margin: 0 auto;
+
+    img {
+      width: 7rem;
+      height: 7rem;
+      display: block;
+      @include respond(desk-xl) {
+        width: 14rem;
+        height: 14rem;
+      }
+    }
+  }
+}
